@@ -60,34 +60,45 @@
 
 ---
 
-## ⚖️ Themis — Quality Assurance Foundation
+## ⚖️ Themis — XAI Evaluation Platform
 
-**品質保証基盤 + Nava AI Agent**
+**XAI（説明可能AI）による評価の見える化プラットフォーム**
 
 <table>
 <tr>
 <td width="60%">
 
-4システム連携による包括的品質保証基盤。PostgreSQL完全統合により、データの一貫性と信頼性を担保。
+AI評価プロセスの透明性と説明可能性を実現するプラットフォーム。**訂正評価**と**行動定量評価**を統合し、XAIによる評価の見える化を実現。
 
-**サブプロジェクト構成**
-- **Nava**: Clean Architecture確立済みのAI Agent基本実装
-- **Compass**: Journal機能による継続的品質モニタリング
-- **nava-ui-mock**: ナビゲーション改善UI
+```
+┌─────────────────────────────────────────────────────────┐
+│                  XAI 評価の見える化                      │
+├─────────────────────────────────────────────────────────┤
+│   ┌─────────────┐           ┌─────────────┐            │
+│   │ themis-nava │ ────────▶ │   compass   │            │
+│   │  訂正評価   │           │ 行動定量評価 │            │
+│   └─────────────┘           └─────────────┘            │
+│                      ▼                                 │
+│          ┌─────────────────────┐                       │
+│          │   統合評価ダッシュ   │                       │
+│          │   ボード (XAI)      │                       │
+│          └─────────────────────┘                       │
+└─────────────────────────────────────────────────────────┘
+```
 
 </td>
 <td width="40%">
 
-**最新の進捗** `Nov 2025`
+**最新の進捗** `Jan 2026`
 
-- ✅ Phase 6 完了 (PostgreSQL完全統合)
-- ✅ UnifiedDataAccessLayer 移行完了
-- ✅ 12テーブル構造確立
-- ✅ M2 完了 (Nava AI Agent基本実装)
-- ✅ Clean Architecture 確立
+- ✅ AWS AgentCore アーキテクチャ再設計
+- ✅ themis-nava 訂正評価システム
+- ✅ compass 行動定量評価システム
+- ✅ 旧ドキュメントアーカイブ完了
+- 🔄 統合評価ダッシュボード実装中
 
 **Tech Stack**
-`Python` `PostgreSQL` `Clean Architecture` `DDD`
+`Python` `AWS AgentCore` `XAI` `Clean Architecture`
 
 </td>
 </tr>
