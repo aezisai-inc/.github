@@ -19,56 +19,40 @@
 私たちは、エンタープライズ向けマルチエージェント統合プラットフォームを開発しています。  
 4つの相互連携システムにより、企業全体のAI化を実現します。
 
+---
+
+## 🧠 ARIA — Synaptic Inheritance Intelligence System
+
+**シナプティック継承型知能システム**
+
 <table>
 <tr>
-<td width="50%">
+<td width="60%">
 
-### 🧠 ARIA
-**Synaptic Inheritance Intelligence System**
+`.well-known` と `.cursor` サブモジュールによるシナプティック継承フローを基盤とした、AIシステムの擬似脳構造を実現。
 
-神経科学的基盤による経験同期システム。組織の暗黙知を体系化し、AIエージェント間で知識を継承・共有します。
-
-- 経験ベースの学習転移
-- コンテキスト認識型記憶
-- マルチモーダル知識統合
-
-</td>
-<td width="50%">
-
-### 🔗 Arthea
-**Enterprise Automation Platform**
-
-企業活動6領域を専門エージェント群が統合管理。業務プロセスの自動化と最適化を実現します。
-
-- 営業・マーケティング自動化
-- バックオフィス効率化
-- クロスファンクショナル連携
+```
+┌─────────────────┐  シナプティック継承  ┌─────────────────┐
+│   .well-known   │ ─────────────────> │     .cursor     │
+│  (汎用知識層)    │                    │   (実行制御層)   │
+│                 │ <───────────────── │                 │
+└─────────────────┘   動的知識活用      └─────────────────┘
+```
 
 </td>
-</tr>
-<tr>
-<td width="50%">
+<td width="40%">
 
-### 💻 Lumier
-**Development Acceleration System**
+**最新の進捗** `Jan 2026`
 
-ARIAの経験を活用した開発生産性向上システム。コード生成からデプロイまでを統合的にサポートします。
+- ✅ Tauri デスクトップアプリ
+- ✅ AWS CDK インフラ構築
+- ✅ Python Agent Server 基盤
+- ✅ Strands Agents ネイティブ統合
+- ✅ Rust/Python レイヤー分離
+- 🔄 AgentCore Memory 実装中
 
-- AI支援コード生成
-- 自動テスト・品質検証
-- CI/CD パイプライン統合
-
-</td>
-<td width="50%">
-
-### ⚖️ Themi
-**Quality Assurance Foundation**
-
-4システム連携による包括的品質保証基盤。AIの出力品質と信頼性を担保します。
-
-- 継続的品質モニタリング
-- バイアス検出・修正
-- コンプライアンス準拠検証
+**Tech Stack**
+`Tauri` `Rust` `Svelte` `Python` `AWS CDK` `Strands Agents`
 
 </td>
 </tr>
@@ -76,15 +60,125 @@ ARIAの経験を活用した開発生産性向上システム。コード生成�
 
 ---
 
-## 📊 導入効果
+## ⚖️ Themis — Quality Assurance Foundation
 
-<div align="center">
+**品質保証基盤 + Nava AI Agent**
 
-| 🚀 開発生産性 | 💰 運用コスト | ✅ システム可用性 |
-|:---:|:---:|:---:|
-| **10倍向上** | **70%削減** | **99.9%** |
+<table>
+<tr>
+<td width="60%">
 
-</div>
+4システム連携による包括的品質保証基盤。PostgreSQL完全統合により、データの一貫性と信頼性を担保。
+
+**サブプロジェクト構成**
+- **Nava**: Clean Architecture確立済みのAI Agent基本実装
+- **Compass**: Journal機能による継続的品質モニタリング
+- **nava-ui-mock**: ナビゲーション改善UI
+
+</td>
+<td width="40%">
+
+**最新の進捗** `Nov 2025`
+
+- ✅ Phase 6 完了 (PostgreSQL完全統合)
+- ✅ UnifiedDataAccessLayer 移行完了
+- ✅ 12テーブル構造確立
+- ✅ M2 完了 (Nava AI Agent基本実装)
+- ✅ Clean Architecture 確立
+
+**Tech Stack**
+`Python` `PostgreSQL` `Clean Architecture` `DDD`
+
+</td>
+</tr>
+</table>
+
+---
+
+## 💻 Lumier — Development Acceleration System
+
+**開発加速基盤（旧: YX Agent）**
+
+<table>
+<tr>
+<td width="60%">
+
+11種類の専門AIエージェントによる完全自律開発体制。マルチエージェント協調により、要求分析から運用まで全開発プロセスを自動化。
+
+| Phase | エージェント | 状態 |
+|-------|------------|------|
+| **Phase 1** | SE / Backend / Tester / Architect | ✅ 運用中 |
+| **Phase 2** | Frontend / Database / DevOps | 🔄 45-60% |
+| **Phase 3** | Security / PO / QA | 📅 計画中 |
+
+</td>
+<td width="40%">
+
+**最新の進捗** `Oct 2025`
+
+- ✅ Phase 1 基盤エージェント完了
+- 🔄 Phase 2 専門エージェント進行中
+- ✅ A2A Protocol 実装
+- ✅ MCP Gateway 統合
+- ✅ .cursor/.well-known サブモジュール化
+
+**Tech Stack**
+`TypeScript` `Next.js` `Python` `LangGraph` `Mastra` `Playwright`
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🔗 Arthea — Enterprise Automation Platform
+
+**業務自動化基盤**
+
+<table>
+<tr>
+<td width="60%">
+
+AIエージェントを活用したエンタープライズソリューションプラットフォーム。企業活動6領域を専門エージェント群が統合管理。
+
+```
+arthea-app/
+├── domain/          # ドメインモデル・ビジネスロジック
+├── application/     # ユースケース
+├── infrastructure/  # 外部サービス連携
+└── interfaces/      # API・UI実装
+```
+
+</td>
+<td width="40%">
+
+**最新の進捗** `Dec 2025`
+
+- ✅ AI Agent Hybrid Architecture 設計
+- ✅ AI Agent Strategy 再構成
+- ✅ アーキテクチャドキュメント整備
+- ✅ ドメインモデル定義完了
+- 🔄 完全自動化ワークフロー実装
+
+**Tech Stack**
+`Python` `TypeScript` `Clean Architecture` `DDD` `FSD`
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🔬 Research & Development
+
+私たちは継続的に新しい技術を研究・検証しています。
+
+| Project | Description | Status |
+|---------|-------------|--------|
+| **rd-bedrock-nova** | Amazon Bedrock Nova統合による次世代マルチモーダルAI | 🔄 Active |
+| **rd-knowledge-sample** | GraphDB + 知識グラフによるRAG高度化・Graphiti統合 | 🔄 Active |
+| **agentcore-langxxxx-comparison** | Strands Agents vs LangChain フレームワーク比較検証 | ✅ Complete |
+| **ai-agent-core-microservice** | マイクロサービスアーキテクチャ + AG-UI Protocol PoC | 🔄 Active |
 
 ---
 
@@ -96,9 +190,10 @@ ARIAの経験を活用した開発生産性向上システム。コード生成�
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Svelte](https://img.shields.io/badge/Svelte-FF3E00?style=flat-square&logo=svelte&logoColor=white)
 
 **Cloud & Infrastructure**
 
@@ -106,44 +201,31 @@ ARIAの経験を活用した開発生産性向上システム。コード生成�
 ![GCP](https://img.shields.io/badge/GCP-4285F4?style=flat-square&logo=google-cloud&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white)
+![Tauri](https://img.shields.io/badge/Tauri-24C8D8?style=flat-square&logo=tauri&logoColor=white)
 
 **AI & ML**
 
 ![Amazon Bedrock](https://img.shields.io/badge/Amazon_Bedrock-FF9900?style=flat-square&logo=amazon-aws&logoColor=white)
-![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
+![Strands Agents](https://img.shields.io/badge/Strands_Agents-232F3E?style=flat-square&logo=amazon-aws&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
 
 **Architecture**
 
-`Clean Architecture` `DDD` `TDD` `Multi-Agent Systems` `MCP` `Event-Driven`
+`Clean Architecture` `DDD` `TDD` `Feature-Sliced Design` `Multi-Agent Systems` `MCP` `A2A Protocol`
 
 </div>
 
 ---
 
-## 🔬 Research & Development
+## 📊 System Metrics
 
-私たちは継続的に新しい技術を研究・検証しています。
+<div align="center">
 
-| Project | Description | Status |
-|---------|-------------|--------|
-| **rd-bedrock-nova** | Amazon Bedrock Nova統合による次世代マルチモーダルAI | 🔄 Active |
-| **rd-knowledge-sample** | GraphDB + 知識グラフによるRAG高度化 | 🔄 Active |
-| **agentcore-langxxxx-comparison** | エージェントフレームワーク比較検証 | ✅ Complete |
-| **ai-agent-core-microservice** | マイクロサービスアーキテクチャPoC | 🔄 Active |
+| 🚀 開発生産性 | 💰 運用コスト | ✅ システム可用性 | 🤖 自動化率 |
+|:---:|:---:|:---:|:---:|
+| **10倍向上** | **70%削減** | **99.9%** | **30→70%** |
 
----
-
-## 📂 Repository Structure
-
-```
-aezisai-inc/
-├── 🏗️ infrastructure/        # CDK/Terraform インフラ定義
-├── 🤖 agent-systems/          # マルチエージェントシステム
-├── 🌐 web-applications/       # Next.js/React アプリケーション
-├── 🔬 research-develop/       # R&D プロジェクト
-└── 📚 documentation/          # 技術ドキュメント
-```
+</div>
 
 ---
 
